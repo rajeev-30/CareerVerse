@@ -1,0 +1,811 @@
+<html>
+
+<head>
+
+    <style>
+        .nav {
+            width: 1550px;
+            background-color: azure;
+            margin: auto;
+            margin-top: 15px;
+
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        a {
+            padding: 55px;
+            text-decoration: none;
+            color: darkslategrey;
+            font-size: 20px;
+
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        li {
+            float: left;
+        }
+
+        .one {
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            color: rgb(19, 18, 18);
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .img {
+            width: 150px;
+            height: 120px;
+        }
+
+        .para {
+
+            padding: 5vw 8vw 0 8vw;
+            text-align: justify;
+            background-color: antiquewhite;
+        }
+
+        .top {
+            color: rgb(249, 20, 12);
+
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="/college_in_front_page/srm.jpg" width="100%" height="450px">
+
+            <div class="one">
+                <img src="/college_in_front_page/download.png" class="img">
+
+            </div>
+
+        </div>
+    </div>
+    <section>
+        <div class="nav">
+            <ul>
+                <li><a onclick="show('Page1');">Overview</a></li>
+                <li><a onclick="show('Page2');">Courses & Fees</a></li>
+                <li><a onclick="show('Page3');">Admission</a></li>
+                <li><a onclick="show('Page4');">Placement</a></li>
+
+                <li><a onclick="show('Page6');">Scholarship</a></li>
+            </ul>
+
+        </div>
+        <script>
+            function show(elementID) {
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("No Such Page Found.");
+                    return;
+                }
+                var pages = document.getElementsByClassName('page');
+                for (var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                ele.style.display = 'block';
+            }
+        </script>
+    </section>
+    <section>
+        <div id="Page1" class="page" style="display:block">
+            <div class="Overview">
+                <div class="para">
+                    <h3>SRM IST Chennai Quick Updates</h3>
+                    <p>
+
+                        SRM Institute of Science and Technology (SRM IST), Chennai is currently accepting applications
+                        for PhD admission under Visvesvaraya Scheme. The last date to submit the application form the
+                        same is December 15, 2022. Also, the last date to pay the tuition fee for SRM IST distance
+                        learning admission and PhD January 2023 admission is November 30 and December 20, 2022,
+                        respectively. Further, SRMJEEE 2023 registrations for BTech admission started on November 22.
+                        The last date to apply for SRMJEE 2023 phase 1 is April 16, 2023. Aspiring candidates can apply
+                        online on the official website - srmist.edu.in. SRMJEE Phase 1 exam will be conducted on April
+                        21, April 22, and April 23, 2023.
+
+
+                    </p>
+                    <h3>SRM Institute of Science and Technology (SRMIST)</h3>
+                    <p>SRM Institute of Science and Technology (SRMIST), formerly SRM University, is a private higher
+                        education institute deemed to be university, located in Kattankulathur, Chengalpattu (near
+                        Chennai), Tamil Nadu, India. Founded in 1985 as SRM Engineering
+                        College in Kattankulathur, it gained the deemed status in 2002 </p>
+                </div>
+            </div>
+        </div>
+        <div id="Page2" class="page" style="display:none">
+            <div class="Courses & Fees">
+                <div>
+                    <table border="1px">
+                        <div>
+                            <tr>
+                                <th>Courses</th>
+                                <th>Total tuition Fees</th>
+                                <th>Eligibility</th><br>
+                            </tr>
+                        </div>
+                        <tr>
+
+                            <td><a href="#">B.E./B.Tech</a></td>
+                            <td>INR 8 L-15.21 L<br>(for 4-5 years)</td>
+                            <td>
+                                <span>Exams :</span> <a href="#"> JEE Main,JEE Adv....</a>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td><a href="#">M.E./M.Tech</a></td>
+                            <td>INR 1.2 L-10 L<br>(for 2-5 years)</td>
+                            <td><span>Graduation:</span> 60%<br><span>Exams :</span><a href="#"> GATE,JEE....</a></td>
+                        </tr>
+                        <tr>
+
+                            <td><a href="#">M.Sc.</a></td>
+                            <td>INR 30k-2.75 L<br>(for 18 month- 6 years)</td>
+                            <td><span>Graduation:</span>60 %<br><span>Exams :</span><a href="#">IIT JAM , GATE</a></td>
+                        </tr>
+                        <tr>
+
+                            <td><a href="#">B.Sc</a></td>
+                            <td>INR 8 L<br>(for 4 years)</td>
+                            <td><span>Exams :</span><a href="#">JEE Main,JEE A...</a></td>
+                        </tr>
+                        <tr>
+
+                            <td><a href="#">M.Des</a></td>
+                            <td>INR 82 k-1.2 L L<br>(for 2 years)</td>
+                            <td><span>Graduation:</span>50 %<br><span>Exams :</span><a href="#">CEED</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">MBA/PGDM</a></td>
+                            <td>INR 8.27 L-15.21 L<br>(for 2-5 years)</td>
+                            <td><span>Graduation:</span>60 %<br><span>Exams :</span><a href="#">CAT</a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><a href="#">M.A.</a></td>
+                            <td>INR 1.2 L-3.55 L<br>(for 2-6 years)</td>
+                            <td><span>Graduation:</span>55-60 %<br><span>Exams :</span><a href="#">GATE,MET</a></td>
+
+                        </tr>
+                    </table><br>
+                </div><br>
+                <div>
+                    <table border="2px">
+                        <span class="f">
+                            <tr>
+                                <th colspan="2">BTech Highlights</th>
+                            </tr>
+
+                            <tr>
+                                <td>Specialisation</td>
+                                <td>Seat Intake</td>
+
+                            </tr>
+                            <tr>
+                                <td>Aerospace Engineering </td>
+                                <td>79</td>
+
+                            </tr>
+                            <tr>
+                                <td>Electrical Engineering </td>
+                                <td>101</td>
+
+                            </tr>
+                            <tr>
+                                <td>Chemical Engineering </td>
+                                <td>157</td>
+
+                            </tr>
+                            <tr>
+                                <td>Mechanical Engineering </td>
+                                <td>176</td>
+                            </tr>
+                            <tr>
+                                <td>Civil Engineering </td>
+                                <td>170</td>
+                            </tr>
+                            <tr>
+                                <td>Metallurgical Engineering & Materials Science </td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Science & Engineering </td>
+                                <td>171</td>
+                            </tr>
+                            <tr>
+                                <td>Engineering Physics </td>
+                                <td class="hi">80</td>
+                            </tr>
+
+                            </tr>
+
+
+
+                        </span>
+                    </table>
+                    <!-- Mtech hightlight -->
+
+                    <table border="2px">
+
+                        <tr>
+                            <th colspan="3">MTech </th>
+                        </tr>
+
+                        <tr>
+                            <th>Department</th>
+                            <th>Specialisation</th>
+                            <th>Seat Intake</th>
+
+                        </tr>
+                        <tr>
+                            <td>Aerospace Engineering </td>
+                            <td>Aerodynamics
+
+                                Dynamics and Control Aerospace Propulsion<br>
+                                Aerospace Structures<br>Design Engineering</td>
+                            <td>57</td>
+
+                        </tr>
+                        <tr>
+                            <td>Biomedical Engineering </td>
+                            <td>Biomedical Engineering</td>
+                            <td>45</td>
+
+                        </tr>
+                        <tr>
+                            <td>Chemical Engineering </td>
+                            <td>
+                                Chemical Engineering</td>
+                            <td>78</td>
+
+                        </tr>
+                        <tr>
+                            <td>Civil Engineering </td>
+                            <td>Transportation Systems Engineering<br>Geotechnical Engineering<br>Water Resources
+                                Engineering<br>Structural Engineering</td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science & Engineering</td>
+                            <td>Computer Science and Engineering</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Electrical Engineering</td>
+                            <td>- Communications Engineering<br>Power Electronics & Power Systems<br>-
+                            </td>
+                            <td>131</td>
+                        </tr>
+
+
+                        <p>Below-mentioned are all MSc specialisations along with their seat intake as per
+                            JAM 2022:</p>
+                    </table>
+
+                    <table border="2px">
+
+                        <tr>
+                            <th colspan="2">MSc</th>
+                        </tr>
+
+                        <tr>
+                            <td>Specialisation</td>
+                            <td>Seat Intake*</td>
+
+                        </tr>
+                        <tr>
+                            <td>Applied Geology</td>
+                            <td>38</td>
+
+                        </tr>
+                        <tr>
+                            <td>Applied Geophysics </td>
+                            <td>20</td>
+
+                        </tr>
+                        <tr>
+                            <td>Applied Statistics & Informatics</td>
+                            <td>48</td>
+
+                        </tr>
+                        <tr>
+                            <td>Biotechnology</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>57</td>
+                        </tr>
+                        <tr>
+                            <td>Economics</td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics/td>
+                            <td>38</td>
+                        </tr>
+
+
+                    </table>
+                    <table border=" 2px">
+
+                        <tr>
+                            <th colspan="2">B.Des</th>
+                        </tr>
+
+                        <tr>
+                            <td>Course</td>
+                            <td>Eligibility</td>
+
+                        </tr>
+                        <tr>
+                            <td>B.Des</td>
+                            <td>
+                                - Candidates from the Science Stream with Physics, Chemistry and Mathematics as
+                                subjects are eligible to apply<br><br>- The candidate should have been born on or after
+                                October 1,
+                                1997
+                                if belonging to the OPEN/EWS/OBC-NCL category and, on or after October 1, 1992
+                                if belonging to the SC, ST or PwD category.</td>
+
+                        </tr>
+
+                    </table><br><br>
+
+
+
+                    <table border="2px">
+
+                        <tr>
+                            <th colspan="2">M.Des</th>
+                        </tr>
+
+                        <tr>
+                            <td>Specialisation</td>
+                            <td>Seat Intake</td>
+
+                        </tr>
+                        <tr>
+                            <td>Industrial Design</td>
+                            <td>
+                                20</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="Page3" class="page" style="display:none">
+            <div class="Admission">
+                <h3>SRM Institute of Science and Technology (SRMIST) Admission 2022: Eligibility, Fees & Selection
+                    Criteria</h3>
+                <p>The institute offers admission to most of the UG, PG, and PhD courses based on national-level
+                    entrance exams.<br>
+                    Check below the course-wise eligibility, fees, and selection criteria: </p>
+
+                <table border="2">
+
+                    <tr>
+                        <th>Course Name</th>
+                        <th><strong>Eligibility & Selection Criteria</strong></th>
+                    </tr>
+                    <tr>
+                        <td>BTech</td>
+                        <td>JEE Main + JEE Advance+JoSAA</td>
+                    </tr>
+                    <tr>
+                        <td> MS by Research</td>
+                        <td>GATE/Written test+Interview</td>
+                    </tr>
+                    <tr>
+                        <td>MBA</td>
+                        <td>CAT</td>
+                    </tr>
+
+                    <tr>
+                        <td>M.Des</td>
+                        <td>CEED+IDC Admission+PI</td>
+                    </tr>
+                    <tr>
+                        <td>PhD</td>
+                        <td>GATE/CSIR NET/CEED/UGC NET/Entrance Exam+PI</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <h3>SRM Institute of Science and Technology (SRMIST) Admission Dates 2022</h3>
+                <p>Find below exam dates for BTech, BS and BTech-MTech (Dual Degree): </p>
+                <table border="2px">
+                    <tr>
+                        <th>IMPORTANT DATE</th>
+                    </tr>
+                    <tr>
+                        <td class="ug">GATE extended last date of registration (with late fee)</td>
+                        <td>7 Oct 23</td>
+
+                    </tr>
+                    <tr>
+                        <td>IIT JAM registration deadline </td>
+                        <td>14 Oct '22</td>
+                    </tr>
+
+                    <tr>
+                        <td>PhD offline registration </td>
+                        <td>9 Sep '22 - 25 Oct '22</td>
+                    </tr>
+
+                    <tr>
+                        <td>PhD online registration </td>
+                        <td>12 Sep '22 - 25 Oct '22</td>
+                    </tr>
+
+                    <tr>
+                        <td>PhD result</td>
+                        <td>21 Dec '22</td>
+                    </tr>
+
+                    <tr>
+                        <td>IIT JAM exam </td>
+                        <td>
+                            12 Feb '23</td>
+                    </tr>
+
+                    <tr>
+                        <td>GATE 2023 exam</td>
+                        <td>4 Feb '23 - 5 Feb '23</td>
+                    </tr>
+
+                    <tr>
+                        <td>Declaration of IIT JAM 2023 result </td>
+                        <td>
+                            22 Mar '23</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <table border="2px">
+                    <tr>
+                        <th colspan="2">UPCOMING EVENTS</th>
+                    </tr>
+                    <tr>
+                        <td class="ug">UCEED - Last date to register with REGULAR fee</td>
+                        <td>4 Nov '22</td>
+                    </tr>
+                    <tr>
+                        <td>Declaration of results for PhD Entrance or Interview</td>
+                        <td>21 Dec '22</td>
+                    </tr>
+
+                    <tr>
+                        <td>CEED 2023 Exam</td>
+                        <td>22 Jan '23</td>
+                    </tr>
+
+                    <tr>
+                        <td>UCEED 2023 Exam</td>
+                        <td>22 Jan '23</td>
+                    </tr>
+
+
+
+                </table><br><br>
+
+
+                <td class="ug">PG Diploma Admission 2022</td>
+                <td class="ug">Certificate Admission 2022</td>
+                </tr>
+                </table><br><br>
+
+                <h3>SRM Institute of Science and Technology (SRMIST) PhD Admission 2022</h3>
+                <p>At the doctoral level, the institute offers an MS (by Research) programme for a <br>three-year
+                    duration.
+                    In addition to this, the deemed University also <br>
+                    offers a PhD programme across all its departments. </p>
+                <table border="2px">
+                    <tr>
+                        <th>SRM Institute of Science and Technology (SRMIST) Doctoral Course</th>
+                    </tr>
+                    <tr>
+                        <td class="ug">PhD Admission 2022</td>
+
+                    </tr>
+                </table>
+
+                <h3>SRM Institute of Science and Technology (SRMIST) Application Process 2022 </h3>
+                <p>The admission process includes the application process, selection round, cutoff, merit list or <br>
+                    and other steps. Check below the Amrita Vishwa Vidyapeetham admission process:</p>
+
+                <p><span style="font-weight: bold;">Step 1: </span>Visit the official website of IIT Delhi
+                    (www.iitd.ac.in). On its
+                    homepage,
+                    click on ‘Admissions’. From the drop-down menu that appears, further, click on ‘Announcements’.
+
+                </p>
+
+                <p><span style="font-weight: bold;">Step 2: </span>To apply for IIT Bombay courses based on
+                    national-level entrance
+                    exams, candidates need to visit the official website of various conducting<br>
+                    bodies to fill out the application form and pay the prescribed application fee online.
+                </p>
+
+                <p><span style="font-weight: bold;">Step 3: </span> The registration page opens up. Click on ‘New User
+                    Register Here’.
+                    Fill the registration form with<br> all the details, including name, email ID, contact number,
+                    course
+                    preference, etc. Also, create<br> an alpha-numeric password for future logins.
+                </p>
+
+                <p><span style="font-weight: bold;">Step 4: </span> Further, fill in the remaining application form by
+                    addressing other details, <br>
+                    including guardian info, address of communication, qualifications, etc.
+                </p>
+
+                <p><span style="font-weight: bold;font-size: 18px;">Step 5: </span> Upload all the required documents in
+                    PDF format.
+                    Also, upload a passport-size<br> photograph and signature and JPG/ JPEG format.
+                </p>
+
+                <p><span style="font-weight: bold;font-size: 18px;">Step 6: </span>Conclude the application process by
+                    paying an
+                    application fee using a debit card/ credit card/ net banking..
+                </p>
+
+                <h3>List of required documents:</h3>
+                <p>Candidates need to submit scanned copies of the below-mentioned documents while filling<br> IIT Delhi
+                    application
+                    form in online mode:</p>
+                <ul style="font-size: 20px;">
+                    <li>Latest passport-size photograph</li>
+                    <li>First and last pages of Aadhar Card/ Voter ID Card/ Passport</li>
+                    <li>PAN Card</li>
+                    <li>Admission offer letter</li>
+                    <li>Entrance exam scorecard</li>
+                    <li>Qualifying degree certificate</li>
+                    <li>Qualifying exam mark sheet</li>
+                    <li>Category certificate (only in case of candidates belonging to SC/ ST/ OBC/ EWS/ PwD category)
+                    </li>
+                    <li>No objection certificate (only in case of part-time applicants)</li>
+                    <li>Sponsorship certificate/ Relieving letter (in case of full-time sponsored/ full-time working
+                        candidates)
+                    </li>
+                    <li>Medical certificate (in case of full-time candidates)</li>
+                </ul>
+            </div>
+        </div>
+        <div id="Page4" class="page" style="display:none">
+            <div class="Placement">
+                <br><br>
+                <h1>SRM Institute of Science and Technology (SRMIST) Placements 2022: Top IITs Comparison
+                </h1>
+                <p>The below-mentioned comparison table showcases IIT Bombay placement 2022 performance in comparison to
+                    other top
+                    IITs such as IIT Delhi, IIT Kanpur and IIT Madras:
+                </p>
+
+
+
+                <h1>SRM Institute of Science and Technology (SRMIST) Average Package 2022
+                </h1>
+                <p>A fluctuating trend was witnessed in the average package offered during IIT Bombay placements over
+                    the past three
+                    years. The average salary trends witnessed during IIT Bombay placements 2020, 2021 and 2022 are
+                    presented below:
+
+
+                </p>
+                <table border="2px" style="border-collapse: collapse;">
+
+                    <tr>
+                        <th>Particulars </th>
+                        <th>Statistics (2020) </th>
+                        <th>Statistics (2021)</th>
+                        <th>Statistics (2022) </th>
+                    </tr>
+                    <tr>
+                        <td>Average package </td>
+                        <td>INR 20.08 LPA </td>
+                        <td>INR 17.91 LPA </td>
+                        <td>INR 22.7 LPA </td>
+                    </tr>
+
+                </table>
+                <br>
+                <br>
+                <table border="2px" style="border-collapse: collapse;">
+
+                    <tr>
+                        <th colspan="2">
+                            SRM Institute of Science and Technology (SRMIST) Placements 2021
+
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Course
+                        </th>
+                        <th>Median Package
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>BTech </td>
+                        <td>INR 19.15 LPA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MTech</td>
+                        <td>INR 17.69 LPA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MBA </td>
+                        <td>INR 12.10 LPA
+                        </td>
+                    </tr>
+
+                </table>
+
+
+
+                <h1>SRM Institute of Science and Technology (SRMIST) Top Recruiters 2022 </h1>
+                <p>The list of top recruiters of SRM Institute of Science and Technology (SRMIST) along with highest
+                    salary packages offered
+                    during Phase 1 of
+                    SRM Institute of Science and Technology (SRMIST)
+                    placements 2022 is presented below:
+
+                </p>
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th> Company Name </th>
+                        <th>Highest Package </th>
+                    </tr>
+
+                    <tr>
+                        <td>Uber </td>
+                        <td>INR 2.1 crore per annum </td>
+                    </tr>
+                    <tr>
+                        <td>Rubrik </td>
+                        <td>INR 92 lakh per annum </td>
+                    </tr>
+                    <tr>
+                        <td>Millennium </td>
+                        <td>INR 62 lakh per annum </td>
+                    </tr>
+                    <tr>
+                        <td>WorldQuant </td>
+                        <td>INR 51.71 lakh per annum</td>
+                    </tr>
+
+                    <tr>
+                        <td>Blackstone </td>
+                        <td>INR 46.62 lakh per annum</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="Page6" class="page" style="display:none">
+            <div class="Scholarship">
+                <br><br>
+                <h1>SRM Institute of Science and Technology (SRMIST) - Indian Institute of Technology Scholarships and
+                    Funding
+                </h1>
+                <hr>
+                <h3>Scholarship 1
+                </h3>
+                <p>Merit-cum-Means scholarship:<br>
+
+                    Merit­ cum­ Means scholarship is awarded to a maximum of 25% of sanctioned Intake of undergraduate
+                    students. For
+                    Dual Degree, it is available only up to the 4th year. For these scholarships, academic merit as well
+                    as means
+                    will be taken into account to determine eligibility. Women Merit Scholarship is a special provision
+                    for female
+                    students of UG programmes only.
+                </p>
+                <p>
+                <ol>
+                    <li> Students whose parental income is upto Rs. 1 Lakh :
+                    </li>
+                </ol>
+                Women-
+                <ul>
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li> Scholarship of Rs. 40,000/­ per year.
+                    </li>
+                    <li> Women Merit Scholarship of Rs. 10,000/­ per year.
+                    </li>
+                    others-
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li> Scholarship of Rs. 40,000/­ per year.
+                    </li>
+                </ul>
+                </p>
+
+                <p>
+                    2 Students whose parental income is above Rs. 1 Lakh up to 3 Lakhs :
+                    <br>
+                    women -
+                <ul>
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li>Scholarship of Rs. 30,000/­ per year.
+                    </li>
+                    <li> Women Merit Scholarship of Rs. 10,000/­ per year.
+                    </li>
+                </ul>
+                others -
+                <ul>
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li> Scholarship of Rs. 30,000/­ per year.
+                    </li>
+                </ul>
+                </p>
+
+                <p>3. Students whose parental income is above Rs. 3 Lakh up to 5 Lakhs :
+                    <br>Women - <br>
+                </p>
+                <ul>
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li> Scholarship of Rs. 20,000/­ per year.
+                    </li>
+                    <li> Women Merit Scholarship of Rs. 10,000/­ per year.
+                    </li>
+                    <p>Others -</p>
+                    <li> Exemption from payment of Tuition fee.
+                    </li>
+                    <li> Scholarship of Rs. 20,000/­ per year.
+
+                    </li>
+                </ul>
+                <br>
+                <h2>Scholarship 2
+                </h2>
+                <p>
+                    National Scholarships (All States): <br>
+                    The National Scholarships are awarded to the students from the respective states. The applications
+                    are forwarded
+                    through IIT. This scholarships are awarded/renewed every year for which students have to submit
+                    their progress
+                    report at the beginning of academic year.
+
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

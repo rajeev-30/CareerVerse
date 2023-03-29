@@ -1,0 +1,577 @@
+<html>
+
+<head>
+    <style>
+        .nav {
+            width: 1550px;
+            background-color: azure;
+            margin: auto;
+            margin-top: 15px;
+
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        a {
+            padding: 55px;
+            text-decoration: none;
+            color: darkslategrey;
+            font-size: 20px;
+
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        li {
+            float: left;
+        }
+
+        .one {
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            color: rgb(19, 18, 18);
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        .img {
+            width: 150px;
+            height: 120px;
+        }
+
+        .para {
+
+            padding: 5vw 8vw 0 8vw;
+            text-align: justify;
+            background-color: antiquewhite;
+        }
+
+        .top {
+            color: rgb(249, 20, 12);
+
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <img src="/kharag.jpg" width="100%" height="450px">
+
+            <div class="one">
+
+                <h3>IIT Kharagpur 2022, Placement, Rankings, Admission, Fees, Courses</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <section>
+        <div class="nav">
+            <ul>
+                <li><a onclick="show('Page1');">Overview</a></li>
+                <li><a onclick="show('Page2');">Courses & Fees</a></li>
+                <li><a onclick="show('Page3');">Admission</a></li>
+                <li><a onclick="show('Page4');">Placement</a></li>
+
+                <li><a onclick="show('Page6');">Scholarship</a></li>
+            </ul>
+
+        </div>
+        <script>
+            function show(elementID) {
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("No Such Page Found.");
+                    return;
+                }
+                var pages = document.getElementsByClassName('page');
+                for (var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                ele.style.display = 'block';
+            }
+        </script>
+
+    </section>
+    <section>
+        <div id="Page1" class="page" style="display:block">
+            <div class="Overview">
+                <div class="para">
+                    <h3>IIT Kharagpur Quick Update
+
+                    </h3>
+                    <p>
+                        IIT Kharagpur is a public technical university in Kharagpur, India. IIT Kharagpur has concluded
+                        admissions for the B.Tech program. The institute is currently accepting application for MBA
+                        admission
+                        2023 offered by VGSOM. The last date to apply for the same is January 31, 2023. Eligible
+                        candidates can
+                        apply online on the official website - som.iitkgp.ac.in. Further, IIT Kharagpur has closed
+                        registrations
+                        for PhD spring semester admission 2022-23. Written test and interview for shortlisted candidates
+                        will be
+                        held between November 14 and November 21, 2022. GATE 2023 application form correction window is
+                        open
+                        now, the last date to make corrections in the application form is November 11, 2022. The GATE
+                        2023 exam
+                        will be conducted between February 4 and February 12, 2023.
+                    </p>
+                    <h3>Overview of IIT Kharagpur</h3>
+                    <p>Indian Institute of Technology Kharagpur (IIT Kharagpur) is a public research university
+                        established by
+                        the Government of India in Kharagpur, West Bengal, India. Established in 1951, the institute is
+                        the
+                        first of the IITs to be established and is recognised as an Institute of National Importance. In
+                        2019 it
+                        was awarded the status of Institute of Eminence by the Government of India.[3]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Page2" class="page" style="display:none">
+            <div class="Courses & Fees">
+                <br><br>
+                <h1>IIT Kharagpur Fees and Eligibility</h1>
+                <hr>
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th>Courses </th>
+                        <th>Total tuition Fees </th>
+                        <th>Eligibility</th>
+                    </tr>
+                    <tr>
+                        <td>B.E. / B.Tech</td>
+                        <td>INR 8 L - 10.46 L
+                            (for 4-5 years)
+                        </td>
+                        <td>Exams :JEE Main JEE Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>MBA/PGDM</td>
+                        <td>INR 3 L - 24 L
+                            (for 2 years)</td>
+                        <td>Graduation : 60 %
+                            Exams :CAT</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc.
+                            (3 Courses)</td>
+                        <td>INR 8 L - 10 L
+                            (for 4-5 years)</td>
+                        <td>Exams :JEE Main JEE Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>M.E./M.Tech
+                            (52 Courses)
+                            (3 Courses)</td>
+                        <td>INR 20 K - 10.46 L
+                            (for 2-6 years)</td>
+                        <td>Exams :GATE,JEE Main</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ph.D.
+                            (15 Courses)
+
+                        </td>
+                        <td>INR 42.66 K
+                            (for 2-5 years)</td>
+                        <td>Exams :GATE,JEE Main</td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div id="Page3" class="page" style="display:none">
+            <div class="Admission">
+
+                <br><br>
+                <h1>IIT Kharagpur Course Admission 2022: Fee, Selection & Eligibility
+                </h1>
+                <p>
+                    IIT Kharagpur admission 2022 is currently ongoing for the BTech programme. The institute accepts JEE
+                    Advanced
+                    scores for admission to BTech. Candidates are required to qualify JEE Main exam prior to appearing
+                    for JEE
+                    Advanced. The results for JEE Advanced are out and students can fill their choices for JoSAA
+                    Counselling 2022
+                    till Sep 21.
+
+
+                </p>
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th>Course Name </th>
+                        <th>Eligibility & Selection Criteria </th>
+                        <th>Total Tuition Fee </th>
+                    </tr>
+                    <tr>
+                        <td>BTech</td>
+                        <td>Eligibility: Class 12 with 75% aggregate <br>
+                            Selection: JEE Main + JEE Advanced + JoSAA Counselling
+                        <td>INR 8 lakh - INR 10.46 lakh
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>BSc </td>
+                        <td>Eligibility: Class 12 with 75% aggregate <br>
+                            Selection: JEE Main + JEE Advanced + JoSAA Counselling
+                        </td>
+                        <td>INR 5.31 lakh to <br> INR 10 lakh
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Integrated MTech</td>
+                        <td>
+                            Eligibility: Class 12 with 75% aggregate</td>
+                        Selection: JEE Main + JEE Advanced + JoSAA Counselling
+
+                        <td>INR 10 lakh </td>
+                    </tr>
+
+                    <tr>
+                        <td>MBA
+                        </td>
+                        <td>Eligibility: 4-year UG or PG degree wit 55%
+                            <br>Selection: CAT + PI
+                        </td>
+                        <td>INR 3 lakh - INR 24 lakh </td>
+                    </tr>
+                    <tr>
+                        <td>PhD</td>
+                        <td>
+
+                            Eligibility: Master's degree with 55% <br>Selection: GATE/ JRF/ NET/ JEST/ CSIR- NET JRF/
+                            COGJET/ CAT/
+                            GMAT/ CEED/ Institute-level test PI
+                        <td>INR 48,550 </td>
+                    </tr>
+                </table>
+                <h1>IIT Kharagpur Admission Process
+
+                </h1>
+                <p>For BTech and BSc, the admission process is completely conducted by JoSAA after students appear for
+                    their JEE
+                    Main and JEE Advanced exam. For other courses, such as MTech, MSc, PhD a, students are required to
+                    appear for
+                    their specific entrance exams (national or university-level and attend exam-specific/
+                    institute-based
+                    counselling process for seat allocation.
+
+                </p>
+                <h2>Step 1: STEP 1: IIT Kharagpur Application Process (All Courses)
+
+                </h2>
+                <p>The application process for a few popular courses completely online. Candidates seeking admission
+                    must apply via
+                    the following websites:
+                </p>
+                <ul>
+                    <li>BTech and BSc/ BS aspirants must fill out the application form for JEE (Main) through the
+                        official website
+                        of the National Testing Agency (NTA) (nta.ac.in). The application fee for boys is INR 625 and
+                        INR 325 for
+                        girls. Read more
+                    </li>
+                    <li>MTech candidates are required to register for GATE through the official website of GATE Online
+                        Application
+                        Processing System (GOAPS) (appsgate.iitd.ac.in). The application fee for boys is INR 1,500 and
+                        INR 750 for
+                        girls. Read more
+                    <li>MTech candidates are required to register for GATE through the official website of GATE Online
+                        Application
+                        Processing System (GOAPS) (appsgate.iitd.ac.in). The application fee for boys is INR 1,500 and
+                        INR 750 for
+                        girls. Read more
+                    </li>
+
+                    <li>For MSc, candidates need to register for IIT JAM through the official website (iitr.ac.in). The
+                        application
+                        fee for others is INR 1,800 for other and INR 900 for female (all categories)/ SC/ ST/ PwD for
+                        one test
+                        paper. Read more
+                    </li>
+                </ul>
+                <p>
+                    For BSc and other courses, candidates can follow the steps given below:
+
+                <h3>Step 2: Selection Rounds
+                </h3>
+                After applying, the institute considers the merit of the candidates for MBA, LLM and PhD admission. For
+                BTech, MSc,
+                BSc and MTech courses, JEE Advanced, IIT JAM and GATE scores are considered for the selection of
+                candidates.
+                Additionally, admission to PhD and MS by Research is based on UGC NET/ CSIR NET and other national-level
+                exam
+                scores.
+                </p>
+
+                <h3>Step 3: Merit List/ Cutoff and Admission Confirmation
+                </h3>
+                <p>JoSAA, COAP and CCMN Counselling are conducted for seat allotment to BTech, MTech and MSc courses. A
+                    merit list
+                    is released by the institute for announcing the names of the candidates shortlisted for certificate,
+                    PhD and MS
+                    by Research courses followed by a counselling round. Candidates need to pay the admission fee to
+                    confirm their
+                    admission.
+
+
+                </p>
+                <h2>IIT Kharagpur BTech Cut off Trends: JoSAA 2022 R6 (Released)
+                </h2>
+                <p>JoSAA Round 6 Seat Allotment for IIT Kharagpur admissions 2022 to BTech course has been released on
+                    Oct 16.
+                    Candidates can check the JoSAA R6 closing ranks (CRs) on this page and on JoSAA's official website.
+                    Tabulated
+                    below are the JoSAA R6 closing ranks for IIT Kharagpur cutoff 2022, along with 2021 and 2020 cutoffs
+                    for the
+                    General category students, to get clarity on past year trends:
+
+                </p>
+
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th colspan="4">JoSAA R6 Closing Ranks: General (All India)</th>
+
+                    </tr>
+                    <tr>
+                        <th>Popular Specialisations </th>
+                        <th>2020 </th>
+                        <th>2021 </th>
+                        <th>2022 </th>
+                    </tr>
+                    <tr>
+                        <td>Computer Science and Engineering
+
+                        </td>
+                        <td>293 </td>
+                        <td>285 </td>
+                        <td>303</td>
+                    </tr>
+
+                    <tr>
+                        <td>Electronics and Electrical Communication Engineering
+                        </td>
+                        <td>1137 </td>
+                        <td>1132 </td>
+                        <td>1145 </td>
+                    </tr>
+
+                    <tr>
+                        <td>Electrical Engineering </td>
+                        <td>1622 </td>
+                        <td>1620 </td>
+                        <td>1805</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mechanical Engineering
+
+                        </td>
+                        <td>2579 </td>
+                        <td>2896 </td>
+                        <td>3350 </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="Page4" class="page" style="display:none">
+            <div class="Placement">
+
+                <br><br>
+                <h1>IIT Kharagpur Highest Package 2022
+                </h1>
+                <p>The institute has not disclosed the official report yet. As soon as the institute releases it, it
+                    will be updated
+                    here. However, according to some media reports, the highest salary offered in 2022 was INR 2.40
+                    crore per annum.
+                    The table below mentions the highest package of IIT Kharagpur placements 2022:
+
+                </p>
+                <table border="2px" style="border-collapse:collapse;">
+                    <tr>
+                        <th colspan="2">IIT Kharagpur Placements 2022
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Particulars
+                        </th>
+                        <th>Statistics
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Highest package
+                        </td>
+                        <td>INR 2.40 crore per annum
+                        </td>
+                    </tr>
+                </table>
+                <h1>IIT Kharagpur Batch Placed 2022
+                </h1>
+                <p>The institute is well known for its BTech, MTech, MSc, MPlan, and MBA courses. The key highlights of
+                    IIT
+                    Kharagpur placements 2022 are tabulated below:
+
+                </p>
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th>
+                            IIT Kharagpur Placements 2022
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Particulars
+                        </th>
+                        <th>Statistics</th>
+                    </tr>
+                    <tr>
+                        <td>Companies participated
+
+                        </td>
+                        <td>245+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Offers made
+                        </td>
+                        <td>1,600+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>International offers made
+                        </td>
+                        <td>35+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PPOs received
+                        </td>
+                        <td>400+
+                        </td>
+                    </tr>
+
+                </table>
+                <h1>IIT Kharagpur Recruiting Companies 2022
+                </h1>
+                <p>Some of the prominent recruiters that were part of IIT Kharagpur placements 2022 are listed in the
+                    table below:
+
+                </p>
+                <table border="2px" style="border-collapse: collapse;">
+                    <tr>
+                        <th>
+                            IIT Kharagpur Placements 2022: Recruiters
+
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>Google
+
+                        </td>
+                        <td>Microsoft
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Micron Technology
+                        </td>
+                        <td>Uber
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>American Express
+                        </td>
+                        <td>Intel
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accenture Japan
+                        </td>
+                        <td>Quantbox
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div id="Page6" class="page" style="display:none">
+            <div class="Scholarship">
+
+                <h1>IIT Kharagpur - Indian Institute of Technology Scholarships and Funding
+                </h1>
+                <hr>
+                <h3>Scholarship 1
+                </h3>
+                <p>
+                    Scholarships offered are
+                    <br> Merit cum Means Scholarship
+                    <br>Inspire Scholarship
+                    <br>Free Mess and Pocket Allowance
+                    <br>Organizational Scholarships & Fellowships
+                    <br>Alumni Scholarships & Awards
+                    <br>SGR International Travel Grant
+                    <br>My Imprint Special Assistance
+
+                </p>
+                <br>
+                <h3>Scholarship 2
+                </h3>
+                <p>
+                    Merit-CumMeans (MCM) scholarship:
+                    <br> These scholarships are awarded from the Institute funds. The Institute shall award scholarships
+                    on the
+                    basis of merit-cum-means to all eligible students of the 4-year B.Tech.(Hons.), 5-year Dual Degree,
+                    5-year
+                    B.Arch.(Hons.) and 5-year
+                    <br>Integrated M.Sc. courses.
+
+                </p>
+                <h3>Scholarship 3
+                </h3>
+                <p>Endowment scholarship:
+                    <br>These scholarships are awarded through an endowment fund and the rules that govern such awards
+                    are stated
+                    below: <br>
+                    1. B.P. Poddar Scholarship <br>
+                    2. Technology Alumni Association (Calcutta Chapter) Scholarship
+                    <br>3. Puri Memorial Scholarship
+
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

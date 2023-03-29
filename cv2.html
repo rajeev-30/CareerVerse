@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="cv2styles.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+
+</head>
+<h1>
+    <?php
+    
+    session_start();
+    
+    if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
+    {
+        header("location: login.php");
+    }
+    
+    
+?>
+</h1>
+<body>
+    <nav class="topbar">
+        <img id="lg" src="Images/cv-logo.png" alt="logo">
+        <div class="nav1">
+            <ul>
+                <li class="prf1"><a href="#"><i>Home</i></a></li>
+                <li class="ul-1-li"><a href="TopPrivateEngColleges.html">Top Universities</a></li>
+                <li class="ul-1-li"><a href="# ">Colleges</a></li>
+                <li class="ul-1-li"><a href="#">Courses</a></li>
+                <li class="ul-1-li"><a href="#">Exams</a></li>
+                <li class="ul-1-li"><a href="#">Admissions</a>2022-23!</li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li class="login1"><a href="register.php">Register</a></li>
+                <li class="contact1"><a href="#ContactUs">Contact Us</a></li>
+                <li class="wp-c"><a href="https://www.watsapp.com">
+                        <img id="wp" alt="watsapp" src="Images/watsapp3.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="dropdown">
+        <div class="drop1">
+                <ul class="main-navigation">
+                  <li><a href="#">Engineering &#9662</a>
+                    <ul class="drp">
+                      <li><a href="#">Top Colleges</a>
+                        <ul>
+                          <li><a href="TopPrivateEngColleges.html">Top Private Engineering Colleges</a></li>
+                          <li><a href="Top Eng. College in India 2022.html">Top Government Engineering Colleges</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Popular Courses</a>
+                        <ul>
+                          <li><a href="OnClick.html">BTech</a></li>
+                          <li><a href="mtech.html">Mtech</a></li>
+                          <li><a href="#">Diploma</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Popular Specialisations</a>
+                        <ul>
+                          <li><a href="#">Computer Science</a></li>
+                          <li><a href="#">Electronics & Communication</a></li>
+                          <li><a href="#">Mechanical</a></li>
+                          <li><a href="#">Civil</a></li>
+                          <li><a href="#">Automobile</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Exams</a>
+                        <ul>
+                          <li><a href="onclickjee.html">Jee</a></li>
+                          <li><a href="onclicklpunest.html">LPUNest</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">College Ranking</a>
+                        <ul>
+                          <li><a href="govt top collages/th.html">Government Colleges</a></li>
+                          <li><a href="top pvt collage/thpvt.html">Private Colleges</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                    <li><a href="#">Medical &#9662</a>
+                      <ul class="drp">
+                        <li><a href="#">Top Colleges</a>
+                          <ul>
+                            <li><a href="topmedical colleges.html">Top Medial Colleges in India</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Popular Courses</a>
+                          <ul>
+                            <li><a href="mbbs.html">MBBS</a></li>
+                            <li><a href="#">BDMS</a></li>
+                            <li><a href="#">MD</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Popular Specialisations</a>
+                          <ul>
+                            <li><a href="#">Medicine</a></li>
+                            <li><a href="#">Dental</a></li>
+                            <li><a href="#">Paramedical</a></li>
+                            <li><a href="#">Pharmacy</a></li>
+                            <li><a href="#">Physiotherapy</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Exams</a>
+                          <ul>
+                            <li><a href="onclickneet.html">NEET</a></li>
+                           
+                          </ul>
+                        </li>
+                        <li><a href="#">College Ranking</a>
+                          <ul>
+                            <li><a href="top govt medical/medgovt.html">Government Medical Colleges</a></li>
+                            <li><a href="top med pvt/medpvt.html">Private Medical Colleges</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                <li><a style="color:rgb(140, 140, 140);" href="#">MBA &#9662</a></li>
+
+                <li><a style="color:rgb(140, 140, 140);" href="#">Design &#9662</a></li>
+ 
+                <li><a style="color:rgb(140, 140, 140);" href="#">Law &#9662</a></li>
+         
+                <li><a style="color:rgb(140, 140, 140);" href="#">Science &#9662</a></li>
+         
+                <li><a style="color:rgb(140, 140, 140);" href="#">Study Abroad &#9662</a></li>
+         
+                <li><a style="color:rgb(140, 140, 140);" href="#">All Courses &#9662</a></li>
+            </ul>
+        </div>
+
+    <div class="wrapper">
+        <section id="home">
+            <h1>Enhance Your Career with CareerVerse</h1>
+            <p>
+                CareerVerse is an extensive search engine for the students,
+                parents, and education industry players who
+                are seeking information on higher education sector in India 
+                and abroad.
+            </p>
+        </section>
+        <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Type to search..">
+            <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class='bx bx-search-alt'></i></div>
+        </div>
+        <div class="btn">
+            <a href="#" class="light">Counselling</a>
+            <a href="#" class="dark">Interactive Learning</a>
+        </div> 
+    </div>
+    <script src="search_suggestions.js"></script>
+    <script src="search_script.js"></script>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img id="logo" src="Images/logo2.jpeg" alt="logo">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Career Verse</span>
+                    <span class="profession">Website</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="cv2.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-graduation icon'></i>
+                            <span class="text nav-text">Achivements</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="logout.php">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+<br><br>
+    </nav>
+    <br><br>
+        <h3>" <span style="font-size:40px ;" >E</span>ducation is the most powerful weapon which you can use to change the world."</h3><br><h4>— Nelson Mandela</h4>
+        <br><br>
+<h2 class="eng_college">Choose Your Career Goal</h2>
+<br>
+<section id="crse" class="sec">
+<div class="course-card">
+    <div class="card_top">
+    <picture>
+        <img src="Images/eng-vector.jpg" alt="">
+    </picture>
+</div>
+    <div class="course_detail">
+        <div>
+            <h3>Engineering</h3>
+            <h5>6011 colleges</h5>
+        </div>
+        <p>
+            <a href="OnClick.html" target="_blank">BE/BTech</a>
+            <br>
+            <a href="mtech.html">ME/MTech</a>
+            <br>
+            <a href="#">Diploma</a>
+        </p>
+    </div>
+
+</div>
+<div class="course-card">
+    <div class="card_top">
+        <picture>
+            <img src="Images/med-vector.jpg" alt="">
+        </picture>
+    </div>
+    <div class="course_detail">
+        <div>
+            <h3>Medical</h3>
+            <h5>2085 colleges</h5>
+        </div>
+        <p>
+            <a href="mbbs.html">MBBS</a>
+            <br>
+            <a href="">PG Medical</a>
+            <br>
+        </p>
+
+    </div>
+
+</div>
+<div class="course-card">
+    <div class="card_top">
+    <picture>
+        <img src="Images/mng-vector.png" alt="">
+    </picture>
+</div>
+    <div class="course_detail">
+        <div>
+            <h3>Management</h3>
+            <h5>7098 colleges</h5>
+        </div>
+        <p>
+            <a href="#">MBA/PGDM</a>
+            <br>
+            <a href="#">BBA/BBM</a>
+            <br>
+            <a href="#">Executive MBA</a>
+        
+        </p>
+        
+    </div>
+
+</div>
+<div class="course-card">
+    <div class="card_top">
+        <picture>
+            <img src="Images/art-vector.jpg" alt="">
+        </picture>
+    </div>
+
+    <div class="course_detail">
+        <div>
+            <h3>Arts</h3>
+            <h5>5179 colleges</h5>
+        </div>
+        <p>
+        <a href="#">BA</a>
+            <br>
+            <a href="#">MA</a>
+            <br>
+            <a href="#">BFA</a>
+            &
+            <a href="#">BSW</a>
+        </p>
+        
+    </div>
+
+</div>
+<div class="course-card">
+    <div class="card_top">
+        <picture>
+            <img src="Images/comrs-vector.jpg" alt="">
+        </picture>
+    </div>
+    <div class="course_detail">
+        <div>
+            <h3>Commerce</h3>
+            <h5>4603 colleges</h5>
+        </div>
+        <p>
+        <a href="#">B.Com</a>
+        <br>
+        <a href="#">M.Com</a>
+    </p>
+    </div>
+
+</div>
+<div class="course-card">
+    <div class="card_top">
+        <picture>
+            <img src="Images/dsgn-vector2.png" alt="">
+        </picture>
+    </div>
+    <div class="course_detail">
+        <div>
+            <h3>Design</h3>
+            <h5>1229 colleges</h5>
+        </div>
+    <p>
+        <a href="#">B.Des</a>
+        <br>
+        <a href="#">M.Des</a>
+    </div>
+</p>
+</div>
+</section>
+<br><br>
+    <h2 class="eng_college">Top Colleges In India</h2>
+    <br>
+    <div class="main">
+        <div class="cards">
+            <div class="image2">
+                <a href="#"><img src="Images/iitmadars.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="madras.html">
+                    <h3>IIT Madaras </h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>75.12 k</a> First Year Fees</p>
+
+                <p>Ranked 1 out of 300 NIRF , Ranked 1 out of 30 india</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!-- img 2--->
+
+        <div class="cards">
+            <div class="image2">
+                <img src="Images/iitdelhi.jpeg">
+            </div>
+            <div class="title">
+                <a href="delhiIITNew2.html" target="_blank">
+                    <h3>IIT Delhi</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.2 lacs </a> First Year Fees</p>
+
+                <p>Ranked 2 out of 300 NIRF , Ranked 1 out of 32 india</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!--img 3-->
+
+        <div class="cards">
+            <div class="image2">
+                <img src="Images/iitbombay.jpeg">
+            </div>
+            <div class="title">
+                <a href="bombay.html">
+                    <h3>IIT Bombay</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.28 lacs </a> First Year Fees</p>
+
+                <p>Ranked 3 out of 300 NIRF , Ranked 2 out of 32 india</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img4-->
+
+        <div class="cards">
+            <div class="image2">
+                <img src="Images/iithyderabad.jpg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>IIT Hydrabad</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.37 lacs </a> First Year Fees</p>
+
+                <p>Ranked 9 out of 300 NIRF , Ranked 601 out of 8001 india</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img5-->
+
+        <div class="cards">
+            <div class="image2">
+                <img src="Images/jadavpur.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>Jadavpur University</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.4 k </a> First Year Fees</p>
+
+                <p>Ranked 11 out of 300 NIRF</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img6-->
+
+        <div class="cards">
+            <div class="image2">
+                <img src="Images/iitkhagapur.jpeg">
+            </div>
+            <div class="title">
+                <a href="kharagpur.html">
+                    <h3>IIT Khargapur</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>90.09 k </a> First Year Fees</p>
+
+                <p>Ranked 5 out of 300 NIRF</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img7-->
+
+        <div class="cards">
+            <div class="image2">
+                <a href="#"><img src="Images/iitguvwahati.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>IIT Guwahati</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.18 lacs </a> First Year Fees</p>
+
+                <p>Ranked 7 out of 300 NIRF</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img8-->
+
+        <div class="cards">
+            <div class="image2">
+                <a href="#"> <img src="Images/iitkanpur.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="kanpur.html">
+                    <h3>IIT Kanpur</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>BE/B.Tech </p>
+                <p><a>2.43 lacs </a> First Year Fees</p>
+
+                <p>Ranked 4 out of 300 NIRF</p>
+                
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="main_place">
+        <h2>Top Places for Collages</h2>
+        <!-- <div class="places">
+          
+          <p>
+            <span>&#139;</span>
+            <span>&#155;</span>
+        </p>
+        </div> -->
+        
+        <section>
+          <div class="placecard"> 
+            <picture>
+              <img src="Images/charminar.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>Hyderabad</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/india-gate.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>New Delhi</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/vidhana-soudha.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>Bangalore</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/shaniwar-wada.png" alt="" />
+            </picture>
+            <div class="places-name-1">
+              <a href="#"><b>Pune</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/gateway-of-india.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>Mumbai</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/chennai-central-railway-station.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>Chennai</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/victoria-memorial.png" alt="" />
+            </picture>
+            <div class="places-name">
+              <a href="#"><b>kolkata</b><br /></a>
+            </div>
+          </div>
+          <div class="placecard">
+            <picture>
+              <img src="Images/surat-municipal-corporation.png" alt="" />
+            </picture>
+  
+            <div class="places-name">
+              <a href="#"><b>Gujarat</b><br /></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br>
+    <h2 class="eng_college">Top  Private  Engineering  Colleges</h2>
+    <br>
+<div class="main">
+    <div class="cards">
+        <div class="image2">
+            <a href=""><img src="Images/vit.jpg"></a>
+        </div>
+        <div class="title">
+            <a href="">
+                <h3>VIT Vellore </h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.2 Rating</p> </p>
+            <p>INR 4.87 L - 7.8 L</p>
+
+            <p> VIT Vellore placements 2022 stood at INR 8.19 LPA. </p>
+
+      
+
+            <a href="/collegeinfo/admisVIT.html">Admissions</a>
+
+            <a href="/collegeinfo/coursefeeVIT.html">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!-- img 2--->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/amrita.jpeg">
+        </div>
+        <div class="title">
+            <a href="av vidyapeetham.html">
+                <h3>A V Vidyapeetham</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.1 Rating</p>
+            <p>2.2 lacs First Year Fees</p>
+
+            <p>placements 2021 were INR 56.95 LPA and INR 5.8 LPA.</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!--img 3-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/srm.jpeg">
+        </div>
+        <div class="title">
+            <a href="srm.html">
+                <h3>SRM University</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.0 Rating </p>
+            <p>INR 2.05 L - 18 L</p>
+
+            <p>SRM IST placements 2022 stood at INR 55 LPA.</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img4-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/amitynoida.jpg">
+        </div>
+        <div class="title">
+            <a href="amity.html">
+                <h3>Amity University, Noida</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.0 Rating </p>
+            <p>INR 6.8 L - 25.11 L</p>
+
+            <p>Package offered was INR 3.8LPA and 2.5LPA</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img5-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/bits.jpg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>BITS Pilani </h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.4 Rating</p>
+            <p>4.4L First Year Fees</p>
+
+            <p>Highest package was INR 60.75 LPA & average package 18 LPA</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img6-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/lpu.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3> LPU</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.2 Rating</p>
+            <p>INR 4.2 L to 15.2 L </p>
+
+            <p>383 LPU students placed at packages between 10LPA & 64LPA.</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img7-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/cu.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>Chandigarh University</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.3 Rating </p>
+            <p>INR 4.2 L to 12.2 L</p>
+
+            <p>150 companies visited the campus during placements 2023.</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img8-->
+
+    <div class="cards">
+        <div class="image2">
+            <a href="#"><img src="Images/kl.jpeg"></a>
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>K L University</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.1 Rating </p>
+            <p>INR 9.15 lakh- INR 10.15 lakh
+            </p>
+
+            <p>254 companies visited the campus during KL University placements 2022.</p>
+            
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+</div>
+<br><br>
+<h2 class="eng_college">Top Medical Colleges</h2>
+<br>
+<div class="main">
+    <div class="cards">
+        <div class="image2">
+            <a href="#"><img src="Images/aiimsdelhi.jpeg"></a>
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>AIIMS, Delhi </h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.6 Rating</p>
+
+            <p>Package offered to UG and PG students during 2021 were INR 1.6 LPA and 1.2 LPA </p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!-- img 2--->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/banaras.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>BHU</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.2 Rating</p>
+
+            <p>Package offered during BHU UG (3-year) placements 2021 was INR 7 LPA. </p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!--img 3-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/jipmer.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>JIPMER Puducherry</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.0 Rating </p>
+
+            <p>Package offered to the MBBS students was INR 12 LPA during placements 2021.</p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img4-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/kgmu.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>KGMU University</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.6 Rating </p>      
+
+            <p>Package offered to UG and PG students were INR 8.5 LPA & 16 LPA during 2021 placements </p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img5-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/pgimer.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>PGIMER, Chandigarh </h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.6 Rating</p>
+           
+            <p>Package offered to the PG and UG was INR 7.53 LPA and 15 LPA during PGIMER placements.</p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img6-->
+
+    <div class="cards">
+        <div class="image2">
+            <img src="Images/kmc.jpeg">
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>KMC Manipal</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.2 Rating</p>
+          
+            <p>Package offered to PG students was INR 15.30 LPA. 105 PG students were placed.</p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img7-->
+
+    <div class="cards">
+        <div class="image2">
+            <a href="#"><img src="Images/stjohns.jpeg"></a>
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>St. John's Medical Collage</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.4 Rating </p>        
+
+            <p>Package offered to PG  students was INR 2.40 LPA and for PG, it was INR 12 LPA. </p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+
+    <!---img8-->
+
+    <div class="cards">
+        <div class="image2">
+            <a href="#"> <img src="Images/cmc.jpeg"></a>
+        </div>
+        <div class="title">
+            <a href="#">
+                <h3>CMC,Vellore</h3>
+            </a>
+        </div>
+        <div class="des">
+            <p>4.7 Rating </p>
+            
+            <p>he median package offered to MBBS students during 2019 placements was INR 1.5 LPA.</p>
+
+            <a href="#">Admissions</a>
+
+            <a href="#">Courses&Fees</a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+
+      
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector(".sidebar"),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+    let span = document.getElementsByTagName('span');
+	let placecard = document.getElementsByClassName('placecard')
+	let placecard_page = Math.ceil(placecard.length/4);
+	let l = 0;
+	let movePer = 25.34;
+	let maxMove = 203;
+	// mobile_view	
+	let mob_view = window.matchMedia("(max-width: 1468px)");
+	if (mob_view.matches)
+	 {
+	 	movePer = 50.36;
+	 	maxMove = 504;
+	 }
+
+	let right_mover = ()=>{
+		l = l + movePer;
+		if (placecard == 1){l = 0;}
+		for(const i of placecard)
+		{
+			if (l > maxMove){l = l - movePer;}
+			i.style.left = '-' + l + '%';
+		}
+
+	}
+	let left_mover = ()=>{
+		l = l - movePer;
+		if (l<=0){l = 0;}
+		for(const i of place-card){
+			if (placecard_page>1)
+            {
+				i.style.left = '-' + l + '%';
+			}
+		}
+	}
+	span[1].onclick = ()=>{right_mover();}
+	span[0].onclick = ()=>{left_mover();}
+    </script>
+
+</body>
+<footer class="footer-distributed">
+ 
+    <div class="footer-left">
+
+      <h3>Career<span>Verse</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <br>
+        <a href="#">Blog</a>
+        <br>
+        <a href="#">Pricing</a>
+       <br>
+      </p>
+
+      <p class="footer-company-name">CareerVerse &copy; 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Students of LPU</span> Punjab, India</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 8520987456</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="">contact@careerverse.com</a></p>
+      </div>
+
+      <div>
+        <i class='bx bxs-group'></i>
+        <p>
+          Arjun Pangunuri <br>
+          Prithu Mishra <br>
+          Rajeev Kumar <br>
+          Ankit Kumar
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+       CareerVerse brings to you scientific and meticulously designed Psychometric Assessments
+       to discover your true potential and interest ,learning styles and skills to excel in 21st Century
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <style>
+
+    .footer-distributed{
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+     
+      padding: 55px 50px;
+      margin-top: 80px;
+      margin-left: 90px;
+    }
+     
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+    }
+     
+    .footer-distributed .footer-left{
+      width: 40%;
+    }
+     
+    .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Cookie', cursive;
+      margin: 0;
+    }
+     
+    .footer-distributed h3 span{
+      color:  #5383d3;
+    }
+     
+     
+    .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+    }
+      
+    
+    
+    .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color:  inherit;
+    }
+     
+    .footer-distributed .footer-company-name{
+      color:  #8f9296;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+     
+     
+    .footer-distributed .footer-center{
+      width: 35%;
+    
+    }
+    
+     
+    .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+     
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 14px;
+      line-height: 38px;
+    }
+     
+    .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+      vertical-align: middle;
+      margin:0;
+      font-size:15px;
+    }
+     
+    .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+    }
+     
+    .footer-distributed .footer-center p a{
+      color:  #5383d3;
+      text-decoration: none;;
+    }
+     
+    .footer-distributed .footer-right{
+      width: 20%;
+    }
+     
+    .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  #92999f;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+     
+    .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+     
+    .footer-distributed .footer-icons{
+      margin-top: 25px;
+    }
+     
+    .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 2px;
+     
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+     
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+     
+     
+    @media (max-width: 880px) {
+     
+      .footer-distributed{
+        font: bold 14px sans-serif;
+      
+      }
+     
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+     
+      .footer-distributed .footer-center i{
+        margin-left: 0;
+      }
+    
+    }
+      </style>
+
+</html>

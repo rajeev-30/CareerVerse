@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+
+        body {
+            font-family: sans-serif;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 33px;
+            font-weight: bold;
+            line-height: 70px;
+            padding-left: 40px;
+        }
+
+        nav {
+            height: 70px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            background: #063247;
+            opacity: 0.6;
+
+        }
+
+        nav ul {
+            margin-right: 300px;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            display: block;
+            padding: 0 15px;
+            line-height: 70px;
+            font-size: 20px;
+            transition: 0.5s;
+            background: #063247;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 85px;
+            border-top: 3px solid #23dbdb;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        nav ul li:hover>ul {
+            top: 70px;
+            opacity: 1;
+            visibility: visible;
+            transition: 0.3s linear;
+        }
+
+        nav ul ul li {
+            width: 350px;
+            display: list-item;
+            position: relative;
+            border: 1px solid #042331;
+            border-top: none;
+        }
+
+        nav ul ul ul li a:hover {
+            color: chartreuse;
+        }
+
+        nav ul ul li a {
+            line-height: 50px;
+
+        }
+
+        nav ul ul ul {
+            border-top: none;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -70px;
+            left: 352px;
+        }
+
+        nav ul ul ul li a i {
+            margin-left: 15px;
+        }
+
+        #home {
+            background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("dv.jpg");
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        #home h2 {
+            color: #fff;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .navigation ul li:hover .menu {
+            display: block;
+            position: absolute;
+            background-color: black;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        .navigation ul li:hover .menu ul {
+            display: block;
+
+        }
+
+        .navigation ul li:hover .menu ul li {
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .navigation ul li:hover .menu ul li:last-child {
+            border-bottom: none;
+        }
+
+        #home p {
+            width: 50%;
+            color: #fff;
+            font-size: 25px;
+            letter-spacing: 1px;
+            line-height: 25px;
+        }
+
+        #home .btn {
+            margin-top: 30px;
+        }
+
+        #home a {
+            text-decoration: none;
+            font-size: 00.9rem;
+            padding: 13px 35px;
+            background-color: #fff;
+            font-weight: 600;
+            border-radius: 7px;
+        }
+
+        #home a.blue {
+            color: #fff;
+            background: rgb(21, 21, 100);
+            transition: 0.3s ease;
+
+        }
+
+        #home a.blue:hover {
+            color: rgb(21, 21, 100);
+            background: white;
+        }
+
+        #home a.yellow {
+            color: #fff;
+            background: #fdc938;
+            transition: 0.3s ease;
+        }
+
+        #home a.yellow:hover {
+            color: #fdc938;
+            background: #fff;
+
+        }
+
+        #features {
+            padding: 5vw 8vw 0 8vw;
+            text-align: center;
+        }
+
+        #features p {
+            color: rgb(235, 135, 135);
+            font-size: 20px;
+        }
+
+        #features .fee-box {
+            background-color: #f9f9ff;
+            text-align: start;
+        }
+
+        #features .fee-box h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgb(44, 44, 80);
+            padding: 13px 0 7px 0;
+        }
+
+        #features .fee-box h3 a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #features .fee-box h3 a:hover {
+            color: #fdc938;
+            font-size: 23px;
+        }
+
+        #features .fee-box p {
+            font-size: 22px;
+            font-weight: 400;
+            color: rgb(78, 78, 233);
+
+
+        }
+
+        #features .fea-base {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 1rem;
+            margin-top: 50px;
+        }
+
+
+        #features .fea-base .fee-box {
+
+            color: grey;
+        }
+
+        .cards {
+            margin: 0px;
+            padding: 0px;
+            width: 20%;
+            background-color: white;
+            border-radius: 5px;
+            margin: 30px;
+            display: inline-block;
+
+        }
+
+        .title {
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .title a {
+
+            text-decoration: none;
+        }
+
+        .title a:hover {
+
+            color: darkorange;
+
+        }
+
+        .des {
+
+            padding: 4px;
+        }
+
+        .des a {
+
+            font-size: 18px;
+
+        }
+
+        .des a:hover {
+            color: orangered;
+
+        }
+
+        .image img {
+            width: 300px;
+            height: 200px;
+
+        }
+
+        button {
+
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 15px;
+            margin: 20px 30px;
+
+        }
+
+
+
+        .container {
+
+            background-color: grey;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+
+        li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="cards">
+            <div class="image">
+                <a href="#"><img src="aiimsdelhi.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>AIIMS, Delhi </h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.6 Rating</p>
+                </p>
+
+                <p>the median package offered to UG and PG students during 2021 were INR 1.6 LPA and 1.2 LPA </p>
+
+
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!-- img 2--->
+
+        <div class="cards">
+            <div class="image">
+                <img src="banaras.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>BHU - Banaras Hindu University</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.2 Rating</p>
+
+
+                <p class="r">The median package offered during BHU UG (3-year) placements 2021 was INR 7 LPA. </p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!--img 3-->
+
+        <div class="cards">
+            <div class="image">
+                <img src="jipmer.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>JIPMER Puducherry</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.0 Rating </p>
+
+
+                <p class="r">The median package offered to the MBBS students was INR 12 LPA during placements 2021.</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img4-->
+
+        <div class="cards">
+            <div class="image">
+                <img src="kgmu.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>KGMU University</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.6 Rating </p>
+               
+
+                <p class="r">the median package offered to UG and PG students during 2021 placements were INR 8.5 LPA and  16 LPA</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img5-->
+
+        <div class="cards">
+            <div class="image">
+                <img src="pgimer.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>PGIMER, Chandigarh </h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.6 Rating</p>
+               
+
+                <p class="r">The median package offered to the PG and PG was INR 7.53 LPA and 15 LPA during PGIMER placements 2021.</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img6-->
+
+        <div class="cards">
+            <div class="image">
+                <img src="kmc.jpeg">
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>KMC Manipal</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.2 Rating</p>
+              
+
+                <p class="r">The median package offered to PG (3 years) students was INR 15.30 LPA. 105 PG (3 years) students were placed.</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img7-->
+
+        <div class="cards">
+            <div class="image">
+                <a href="#"><img src="stjohns.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>St. John's Medical Collage</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.4 Rating </p>
+                
+
+                <p class="r">The median package offered to PG  students was INR 2.40 LPA and for PG, it was INR 12 LPA. </p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+
+        <!---img8-->
+
+        <div class="cards">
+            <div class="image">
+                <a href="#"> <img src="cmc.jpeg"></a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <h3>Christian Medical College,Vellore</h3>
+                </a>
+            </div>
+            <div class="des">
+                <p>4.7 Rating </p>
+                
+                <p class="r">he median package offered to MBBS students during 2019 placements was INR 1.5 LPA.</p>
+
+                <a href="#">Admissions</a>
+
+                <a href="#">Courses&Fees</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
